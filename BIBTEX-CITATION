@@ -1,0 +1,6 @@
+@MISC{GithubSource_2022,
+    author = {Петро Колосов},
+    title = {{"LaTeX шаблон на русском" Source files}},
+    howpublished = {Доступен в электронном варианте \url {https://github.com/kolosovpetro/latex-russian-template}},
+    year = {2022}
+}
