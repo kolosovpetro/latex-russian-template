@@ -21,6 +21,12 @@
 \onehalfspacing
 \emergencystretch=1em
 
+%% footnote definition begins
+\makeatletter
+\def\keywords{\xdef\@thefnmark{}\@footnotetext}
+\makeatother
+%% footnote definition ends
+
 \newtheorem{thm}{Theorem}[section]
 \newtheorem{cor}[thm]{Corollary}
 \newtheorem{lem}[thm]{Lemma}
@@ -32,12 +38,26 @@
 \date{} %leave it blank, looks better
 \author{Петро Колосов}
 
+\hypersetup{
+    pdftitle={LaTeX шаблон на русском},
+    pdfsubject={
+        Your Subject List
+    },
+    pdfauthor={Петро Колосов},
+    pdfkeywords={
+        Your Keywords list
+    }
+}
+
 \begin{document}
     \maketitle
 
     \begin{abstract}
         \input{sections/abstract.tex}
     \end{abstract}
+
+    \keywords{2010 \emph{Mathematics Subject Classification.} Primary ..; Secondary \dots}
+    \keywords{\emph{Key words and phrases.} Ключевое слово 1, Ключевое слово 2 \dots}
 
 
     \section{Введение} \label{sec:introduction}
