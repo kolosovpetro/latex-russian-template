@@ -10,7 +10,8 @@ LaTeX шаблон на русском, который включает в се�
 - Установить `Intellij IDEA Ultimate` среду разработки: https://www.jetbrains.com/idea/download/#section=windows
 - Активировать `Intellij IDEA Ultimate`, надеюсь у вас есть ключ
 - Установить плагин `TeXiFy IDEA` для `Intellij IDEA Ultimate`: https://plugins.jetbrains.com/plugin/9473-texify-idea
-- Склонируйте данный репозиторий или используйте как шаблон на GitHub: `https://github.com/kolosovpetro/latex-russian-template.git`
+- Склонируйте данный репозиторий или используйте как шаблон на
+  GitHub: `https://github.com/kolosovpetro/latex-russian-template.git`
 - Откройте склонированный проект в среде разработки `Intellij IDEA Ultimate` и сконфигурируйте сборку документа
     - LaTeX Configuration
       ![LaTeX Configuration](img/latex_configuration.PNG?raw=true "LaTeX Configuration")
@@ -29,8 +30,8 @@ LaTeX шаблон на русском, который включает в се�
 ## Политика срабатывания CI / CD
 
 - `build-pdf.yml` срабатывает при `pull_request`, `push` в ветку `develop`
-- `build-and-deploy-pdf.yml` публиует собранный PDF документ на удаленный репозиторий `GitHub Pages`. 
-Срабатывает на событии `push` в ветку `master`
+- `build-and-deploy-pdf.yml` публиует собранный PDF документ на удаленный репозиторий `GitHub Pages`.
+  Срабатывает на событии `push` в ветку `master`
 
 ## Пример шаблона
 
@@ -38,8 +39,12 @@ LaTeX шаблон на русском, который включает в се�
 
 <p align="center">
   <img src="img/template_example.PNG" alt="template_example"/>
+  <img src="img/template_example2.PNG" alt="template_example"/>
+  <img src="img/template_example3.PNG" alt="template_example"/>
 </p>
 
 ## Лицензия
 
-This work is licensed under [Attribution-NonCommercial-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode) license
+This work is licensed
+under [Attribution-NonCommercial-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode)
+license

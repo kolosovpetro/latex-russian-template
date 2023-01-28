@@ -3,13 +3,10 @@ name: Build PDF
 on:
   push:
     branches:
-      - develop
-      - master
       - main
   pull_request:
     branches:
       - main
-      - master
   workflow_dispatch:
 
 env:
