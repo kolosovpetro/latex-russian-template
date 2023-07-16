@@ -3,10 +3,8 @@
 \usepackage[T2A]{fontenc}
 \usepackage[english,russian]{babel}
 \usepackage{amscd}
-\usepackage{array}
 \usepackage[dvips]{graphicx}
 \usepackage{longtable,wrapfig}
-
 \usepackage{amsfonts}
 \usepackage{amsmath}
 \usepackage{amssymb}
@@ -20,6 +18,10 @@
 \usepackage{setspace}
 \linespread{1.7}
 \emergencystretch=1em
+\usepackage{array}
+\usepackage{etoolbox}
+\apptocmd{\sloppy}{\hbadness 10000\relax}{}{}
+\raggedbottom
 
 %% footnote definition begins
 \makeatletter
@@ -31,6 +33,8 @@
 \newtheorem{cor}[thm]{Corollary}
 \newtheorem{lem}[thm]{Lemma}
 \newtheorem{examp}[thm]{Example}
+\newtheorem{conj}[thm]{Conjecture}
+\newtheorem{defn}[thm]{Definition}
 
 \numberwithin{equation}{section}
 
@@ -69,5 +73,6 @@
     \input{sections/conclusions.tex}
 
     \bibliographystyle{unsrt}
-    \bibliography{LatexRussianTemplateReferences}
+    \bibliography{LatexRussianTemplate}
+    \noindent \textbf{Version:} \input{sections/version}
 \end{document}
