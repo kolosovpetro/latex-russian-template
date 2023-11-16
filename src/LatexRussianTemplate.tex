@@ -1,10 +1,11 @@
 \documentclass[12pt,a4paper]{article}
 \usepackage[utf8]{inputenc}
-\usepackage[T2A]{fontenc}
+\usepackage[T1,T2A]{fontenc}
 \usepackage[english,russian]{babel}
 \usepackage{amscd}
 \usepackage[dvips]{graphicx}
-\usepackage{longtable,wrapfig}
+\usepackage{longtable}
+\usepackage{wrapfig}
 \usepackage{amsfonts}
 \usepackage{amsmath}
 \usepackage{amssymb}
@@ -57,7 +58,7 @@
     \maketitle
 
     \begin{abstract}
-        \input{sections/abstract.tex}
+        \input{sections/abstract}
     \end{abstract}
 
     \keywords{2010 \emph{Mathematics Subject Classification.} Primary ..; Secondary \dots}
@@ -66,11 +67,11 @@
 
 
     \section{Введение} \label{sec:introduction}
-    \input{sections/introduction.tex}
+    \input{sections/introduction}
 
 
     \section{Заключение}\label{sec:conclusions}
-    \input{sections/conclusions.tex}
+    \input{sections/conclusions}
 
     \bibliographystyle{unsrt}
     \bibliography{LatexRussianTemplate}
