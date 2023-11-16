@@ -2,6 +2,8 @@
 
 LaTeX шаблон на русском, который включает в себя базовую настройку CI/CD и шаблоны программ на языке Wolfram.
 
+- https://dev.azure.com/PetroKolosovProjects/latex-russian-template
+
 ## Последовательность действий для сборки документа
 
 - Установить `MikTeX`: https://miktex.org/download

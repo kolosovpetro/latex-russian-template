@@ -1,0 +1,27 @@
+\begin{thebibliography}{1}
+
+\bibitem{kolmogorov1950osnovnye}
+А.~Н. Колмогоров.
+\newblock {\em Основные понятия теории
+  вероятностей. 2 изд}.
+\newblock М.: наука, 1950.
+
+\bibitem{kolmogorov83kobminatorniye}
+Андрей~Николаевич Колмогоров.
+\newblock Комбинаторные основания теории
+  информации и исчисления вероятностей.
+\newblock {\em Успехи математических наук}, 38(4
+  (232):27--36, 1983.
+
+\bibitem{GithubSource_2022}
+Petro Kolosov.
+\newblock Latex russian template source files.
+\newblock Available electronically at \url
+  {https://github.com/kolosovpetro/latex-russian-template}, 2022.
+
+\bibitem{Sloane_theencyclopedia}
+N.~J.~A. Sloane.
+\newblock The on-line encyclopedia of integer sequences.
+\newblock published electronically at \url {https://oeis.org}, 1964.
+
+\end{thebibliography}
