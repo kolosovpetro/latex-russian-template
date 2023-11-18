@@ -29,9 +29,44 @@ Lorem ipsum по большей части является элементом �
 Lorem ipsum, а также ее многие варианты были использованы в работе начиная с 1960-ых, и очень даже похоже,
 что еще с 16-го века.
 
+\begin{thmrus}
+    Пример теоремы на русском языке.
+\end{thmrus}
+
+\begin{lemrus}
+    Пример леммы на русском языке.
+\end{lemrus}
+
+\begin{thm}
+    Example of theorem in english
+\end{thm}
+
 Пример изображения
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.8\textwidth]{../img/latex_configuration}
     ~\caption{Пример изображения.}\label{fig:figure}
 \end{figure}
+
+\begin{equation*}
+    \llceil \nobarfrac{a}{b} \rrfloor_{m}
+\end{equation*}
+\begin{equation*}
+    \llceilCoefficient{a}{b}{m}
+\end{equation*}
+
+And for any natural $m$ we have polynomial identity
+\begin{equation}
+    x^m = \sum_{k=1}^{m} T(m, k) \centralFactorial{x}{k}\label{eq:knuth-power-identity}
+\end{equation}
+where $\centralFactorial{x}{k}$ denotes central factorial defined by
+\begin{equation*}
+    \centralFactorial{x}{n} = x \fallingFactorial{x+\frac{n}{2}-1}{n-1}
+\end{equation*}
+where $\fallingFactorial{n}{k} = n (n-1) (n-2) \cdots (n-k+1)$ denotes falling factorial in Knuth's notation.
+In particular,
+\begin{equation*}
+    \centralFactorial{x}{n}
+    = x \left( x+\frac{n}{2}-1 \right) \left( x+\frac{n}{2}-1 \right) \cdots \left (x+\frac{n}{2}-n-1 \right)
+    = x \prod_{k=1}^{n-1} \left( x+\frac{n}{2}-k \right)
+\end{equation*}
