@@ -44,9 +44,3 @@ LaTeX шаблон на русском, который включает в се�
   <img src="img/template_example2.PNG" alt="template_example"/>
   <img src="img/template_example3.PNG" alt="template_example"/>
 </p>
-
-## Лицензия
-
-This work is licensed
-under [Attribution-NonCommercial-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode)
-license
