@@ -18,7 +18,7 @@ env:
 
 jobs:
   build-pdf:
-    uses: kolosovpetro/latex-russian-template/.github/workflows/build-pdf-template.yml@main
+    uses: kolosovpetro/latex-russian-template/.github/workflows/build-pdf-template.yml@MATH-82
     with:
       file_name: 'LatexRussianTemplate'
       runs_on: 'ubuntu-latest'
