@@ -18,6 +18,7 @@ LaTeX шаблон на русском, который включает в се�
 - Установить `MikTeX`: https://miktex.org/download
 - Обновить `MikTeX`
 - Установить `SumatraPDF`: https://www.sumatrapdfreader.org/download-free-pdf-viewer
+- Путь к SumatraPDF: `C:\Program Files\SumatraPDF`
 - Установить `Intellij IDEA Ultimate` среду разработки: https://www.jetbrains.com/idea/download/#section=windows
 - Активировать `Intellij IDEA Ultimate`, надеюсь у вас есть ключ
 - Установить плагин `TeXiFy IDEA` для `Intellij IDEA Ultimate`: https://plugins.jetbrains.com/plugin/9473-texify-idea
