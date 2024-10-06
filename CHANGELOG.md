@@ -15,3 +15,4 @@ and this project adheres to [Semantic Versioning v2.0.0](https://semver.org/spec
 - Update README with new build instructions
 - Implement latex build template (GitHub Actions)
 - Implement latex deploy template (GitHub Actions)
+- Update readme
