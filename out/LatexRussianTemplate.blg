@@ -1,13 +1,13 @@
 This is BibTeX, Version 0.99d
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
-The top-level auxiliary file: LatexRussianTemplate.aux
+The top-level auxiliary file: E:\RiderProjects\04_LATEX\latex-russian-template\out/LatexRussianTemplate.aux
 Reallocating 'name_of_file' (item size: 1) to 6 items.
 The style file: unsrt.bst
 Reallocating 'name_of_file' (item size: 1) to 21 items.
 Database file #1: LatexRussianTemplate.bib
 You've used 4 entries,
             1791 wiz_defined-function locations,
-            470 strings with 4444 characters,
+            471 strings with 4570 characters,
 and the built_in function-call counts, 628 in all, are:
 = -- 55
 > -- 16
