@@ -1,7 +1,13 @@
 trigger:
-  - master
-  - main
-  - develop
+  batch: true
+  branches:
+    include:
+      - main
+
+pr:
+  branches:
+    include:
+      - main
 
 variables:
   - name: 'vmImageName'
@@ -12,13 +18,13 @@ variables:
 
   - name: StageName
     value: 'LaTeX_Build_Ubuntu_Latest'
-    
+
   - name: LatexFileName
     value: 'LatexRussianTemplate'
-    
+
   - name: LatexFilePath
     value: '$(System.DefaultWorkingDirectory)/src/$(LatexFileName).tex'
-    
+
   - name: OutputDirectory
     value: '$(System.DefaultWorkingDirectory)/out'
 
@@ -30,11 +36,11 @@ stages:
         displayName: ${{ variables.StageName }}
         pool:
           vmImage: ${{ variables.vmImageName }}
-        
+
         steps:
           - checkout: self
             fetchDepth: 0
-            
+
           - task: gitversion/setup@0
             displayName: 'GitVersion Setup'
             inputs:
@@ -48,24 +54,24 @@ stages:
             env:
               Action: '##vso[build.updatebuildnumber]'
               BuildVersion: '$(GitVersion.SemVer)'
-            
+
           - bash: |
               sudo apt-get install texlive-latex-extra
               sudo apt-get install texlive-lang-cyrillic
             displayName: 'Install TeXLive'
-            
+
           - bash: |
               sudo mkdir -p $(OutputDirectory)
               sudo chmod -R 775 $(OutputDirectory)
             workingDirectory: '$(System.DefaultWorkingDirectory)'
             displayName: 'Create Output Directory'
-            
+
           - bash: |
               newVersion="$(GitVersion.SemVer)+$(GitVersion.BranchName).$(GitVersion.ShortSha)"
               sed -i "s|Local-0.1.0|$newVersion|" "src/sections/version.tex"
             displayName: 'Update version.tex'
             workingDirectory: '$(System.DefaultWorkingDirectory)'
-              
+
           - bash: |
               sudo fmtutil-sys --all
             displayName: 'Update TeXLive Formats'
