@@ -14,7 +14,7 @@ variables:
     value: 'ubuntu-latest'
 
   - name: 'System.Debug'
-    value: 'true'
+    value: 'false'
 
   - name: StageName
     value: 'LaTeX_Build_Ubuntu_Latest'
@@ -41,12 +41,12 @@ stages:
           - checkout: self
             fetchDepth: 0
 
-          - task: gitversion/setup@0
+          - task: gitversion/setup@3
             displayName: 'GitVersion Setup'
             inputs:
-              versionSpec: '5.9.x'
+              versionSpec: '5.x'
 
-          - task: gitversion/execute@0
+          - task: gitversion/execute@3
             displayName: 'GitVersion Execute'
 
           - bash: echo $Action$BuildVersion
