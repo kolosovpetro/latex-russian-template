@@ -56,9 +56,14 @@ stages:
               BuildVersion: '$(GitVersion.SemVer)'
 
           - bash: |
-              sudo apt-get install texlive-base
+              sudo apt-get update
+              sudo apt-get install texlive-latex-extra
               sudo apt-get install texlive-lang-cyrillic
             displayName: 'Install TeXLive'
+
+          - bash: |
+              sudo fmtutil-sys --all
+            displayName: 'Update TeXLive Formats'
 
           - bash: |
               sudo mkdir -p $(OutputDirectory)
@@ -71,10 +76,6 @@ stages:
               sed -i "s|Local-0.1.0|$newVersion|" "src/sections/version.tex"
             displayName: 'Update version.tex'
             workingDirectory: '$(System.DefaultWorkingDirectory)'
-
-          - bash: |
-              sudo fmtutil-sys --all
-            displayName: 'Update TeXLive Formats'
 
           - bash: |
               echo "Compiling LaTeX document first time ..."
