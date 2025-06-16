@@ -56,7 +56,7 @@ stages:
               BuildVersion: '$(GitVersion.SemVer)'
 
           - bash: |
-              sudo apt-get install texlive-latex-extra
+              sudo apt-get install texlive-base
               sudo apt-get install texlive-lang-cyrillic
             displayName: 'Install TeXLive'
 
