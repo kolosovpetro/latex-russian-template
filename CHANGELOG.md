@@ -9,7 +9,7 @@ and this project adheres to [Semantic Versioning v2.0.0](https://semver.org/spec
 
 - Update build script
 - Update workspace script
-- Enable azure devops CI
+- Update azure devops CI
 - Bump azure devops tasks
 
 ## [1.3.0] - 2024-10-06

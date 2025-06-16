@@ -1,9 +1,12 @@
 trigger: none
+pr: none
 
-pr:
-  branches:
-    include:
-      - main
+#trigger: none
+#
+#pr:
+#  branches:
+#    include:
+#      - main
 
 variables:
   - name: 'vmImageName'
